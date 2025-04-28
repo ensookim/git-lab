@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+        with:
+          fetch-depth: 0  # 👈 이거 추가해야 HEAD~1이 인식됨
 
       - name: Install dependencies
         run: npm install # 커밋 메시지를 검사하기 위해 의존성 설치
