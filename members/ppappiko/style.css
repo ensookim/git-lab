@@ -1,0 +1,61 @@
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .card {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 350px;
+  }
+  
+  .profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+    margin: 0.5rem 0;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0.5rem 0;
+  }
+  
+  .details {
+    margin-top: 1.5rem;
+    text-align: left;
+  }
+  
+  .details h2 {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #333;
+  }
+  
+  .details ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .details p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #555;
+  }
+  
