@@ -1,0 +1,19 @@
+name: Commit Linting
+
+on:
+  pull_request:
+    branches:
+      - main # PR이 'main' 브랜치에 생성될 때마다 실행
+
+jobs:
+  commitlint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: npm install # 커밋 메시지를 검사하기 위해 의존성 설치
+
+      - name: Lint commit messages
+        run: npx --no-install commitlint --from=HEAD~1 --to=HEAD # 커밋 메시지 규칙 검사
