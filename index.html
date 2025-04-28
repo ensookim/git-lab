@@ -71,7 +71,8 @@
 
     <script>
       function goToPage(url) {
-        window.location.href = url;
+        const repoName = 'git-lab'; // 리포지터리명 정확히
+        window.location.href = window.location.origin + '/' + repoName + url;
       }
     </script>
   </body>
