@@ -1,0 +1,19 @@
+name: Commit Linting
+
+on:
+  pull_request:
+    branches:
+      - main 
+      
+jobs:
+  commitlint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Lint commit messages
+        run: npx --no-install commitlint --from=HEAD~1 --to=HEAD
