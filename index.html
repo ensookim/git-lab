@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Team 소개 페이지</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 50px;
+        background-color: #f0f0f0;
+      }
+
+      h1 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+      }
+
+      .team {
+        margin-bottom: 40px;
+      }
+
+      .team-member {
+        margin: 10px 0;
+        font-size: 1.2em;
+      }
+
+      .buttons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      button {
+        padding: 10px 20px;
+        font-size: 1em;
+        cursor: pointer;
+        background-color: #4caf50;
+        border: none;
+        color: white;
+        border-radius: 5px;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>👥 우리 팀 소개</h1>
+
+    <div class="team">
+      <div class="team-member">🧑‍💻 김은수</div>
+      <div class="team-member">👩‍💻 신형준</div>
+      <div class="team-member">👨‍💻 이민호</div>
+    </div>
+
+    <div class="buttons">
+      <button onclick="goToPage('/members/ensookim/index.html')">
+        은수 페이지
+      </button>
+      <button onclick="goToPage('/members/hyeongjunshin/index.html')">
+        형준 페이지
+      </button>
+      <button onclick="goToPage('/members/ppappiko/index.html')">
+        민호 페이지
+      </button>
+    </div>
+
+    <script>
+      function goToPage(url) {
+        window.location.href = url;
+      }
+    </script>
+  </body>
+</html>
